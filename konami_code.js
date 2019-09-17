@@ -13,21 +13,11 @@ const codes = [
 
 let index = 0;
 
-document.body.addEventListener("keydown", (thingPressed) => {
-  const key = thingPressed.key
-  console.log(key)
+let userKey = [];
 
-  if (codes[index] == key) {
-    ++index
-  }
+function init() {
+  // your code here
+  const key = e.key;
 
-  else {
-    idx = 0
-  }
-
-  console.log(index)
-  if (index == 10) {
-    alert("Hurray!");
-    index = 0
-  }
-});
+  key.addEventListener('keydown', function(thing))
+}
