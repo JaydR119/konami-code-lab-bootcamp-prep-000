@@ -11,13 +11,18 @@ const codes = [
   "a"
 ];
 
-let index = 0;
-
-let userKey = [];
-
 function init() {
   // your code here
-  const key = e.key;
+  let index = 0;
 
-  key.addEventListener('keydown', function(thing))
+  document.body.addEventListener('keydown', (e) => {
+    const key = e.key;
+
+    index = (codes[index] === key) ? ++index: 0;
+
+    if (index === codes.length) {
+      window.alert('Hurray!');
+      index = 0;
+    }
+  });
 }
